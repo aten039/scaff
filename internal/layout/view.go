@@ -12,7 +12,7 @@ func (m AppModel) View() string {
 		return fmt.Sprintf("\n%s  \nPress q to quit.\n", m.ScriptError)
 
 	case ScriptFinished:
-		return fmt.Sprintf("\nfinished successfully\n%s  \nPress q to quit.\n", m.ScriptFinished)
+		return fmt.Sprintf("\nfinished successfully\n%s  \nPress q to continue.\n", m.ScriptFinished)
 
 	case LanguageModel:
 		return m.Language.View()

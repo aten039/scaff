@@ -33,7 +33,7 @@ type AppModel struct {
 
 func InitialApp() AppModel {
 	s := spinner.New()
-	s.Spinner = spinner.Dot // Elige el estilo de spinner que te guste
+	s.Spinner = spinner.Dot
 	// s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
 
 	return AppModel{
